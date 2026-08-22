@@ -1,0 +1,63 @@
+{
+  "name": "astro-dev-i18n-coverage",
+  "version": "1.0.0",
+  "description": "Astro Dev Toolbar app that scans the rendered DOM for missing i18n keys, generates translations with Chrome Built-in AI, and outputs ready-to-use locale JSON.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./app": {
+      "types": "./dist/app.d.ts",
+      "import": "./dist/app.js",
+      "default": "./dist/app.js"
+    },
+    "./scanner": {
+      "types": "./dist/scanner.d.ts",
+      "import": "./dist/scanner.js",
+      "default": "./dist/scanner.js"
+    },
+    "./translator": {
+      "types": "./dist/translator.d.ts",
+      "import": "./dist/translator.js",
+      "default": "./dist/translator.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts src/app.ts --outdir ./dist",
+    "test": "bun test",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "dev-toolbar",
+    "i18n",
+    "internationalization",
+    "localization",
+    "chrome-ai",
+    "gemini-nano",
+    "window.ai",
+    "translator"
+  ],
+  "author": "bhubbard",
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": ">=5.0.0 <8.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "astro": "^5.4.0",
+    "typescript": "^5.8.0"
+  }
+}
