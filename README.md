@@ -5,8 +5,11 @@
 [![Chrome AI](https://img.shields.io/badge/Chrome_Built--in_AI-Gemini_Nano-4285F4.svg)](https://developer.chrome.com/docs/ai/built-in)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-3178C6.svg)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-code.brandonhubbard.com-brightgreen?logo=github)](https://code.brandonhubbard.com/astro-dev-i18n-coverage/)
 
 **`astro-dev-i18n-coverage`** is an **Astro Dev Toolbar** integration that scans the rendered DOM in real-time for missing or untranslated i18n keys and placeholder tags. It passes surrounding DOM context to **Chrome Built-in AI** (`window.ai.translator` or `window.ai.languageModel` / Gemini Nano) and renders an interactive diff card with suggested translations and a **1-click "Copy to locale JSON"** button.
+
+> 🎮 **Live Interactive Visualizer & Demo:** [astro-dev-i18n-coverage on code.brandonhubbard.com](https://code.brandonhubbard.com/astro-dev-i18n-coverage/)
 
 ---
 
